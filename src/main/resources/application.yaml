@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: exam-platform
+  datasource:
+    # Connection Database
+    url: jdbc:sqlserver://DESKTOP-02I315T:1433;databaseName=cervantes_exam_platform;trustServerCertificate=true;
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    # Credentials
+    username: sa
+    password: ${DB_PASS}
+    # Hibernate
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.SQLServerDialect
+server:
+  port: 8052
+  servlet:
+    context-path: /cervantes/exam-platform/api/v1
+security:
+  jwt:
+    secret-key: ${SECRET_TOKEN}
+    expiration: 86400000
+    refresh-token:
+      name: refresh_token
+      expiration: 604800000
+    name: access_token

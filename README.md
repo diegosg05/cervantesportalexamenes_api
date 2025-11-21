@@ -2,9 +2,22 @@
 
 API REST desarrollada en Spring Boot siguiendo Arquitectura Hexagonal (Ports & Adapters), diseñada para gestionar un portal de exámenes con autenticación mediante JWT (access y refresh tokens), control de roles y módulos de gestión para categorías, exámenes y preguntas.
 
-- Tecnologías: Java + Spring Boot + Spring Security + JWT + Arquitectura Hexagonal
-- Seguridad por roles: ADMIN, STUDENT
-- Funcionalidades: login, registro de estudiantes, gestión de categorías, exámenes y preguntas
+- Tecnologías:
+    - Java 21
+    - Spring Boot
+    - Spring Security
+    - Spring Data JPA
+    - JWT Access & refresh tokens
+    - SQL Server
+- Seguridad por roles:
+    - ADMIN
+    - STUDENT
+- Funcionalidades:
+    - Login
+    - Registro de estudiantes
+    - Gestión de categorías
+    - Gestión de exámenes
+    - Gestión de preguntas
 - Diseño flexible, mantenible y escalable
 
 ## Estructura del Proyecto
